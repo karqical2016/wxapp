@@ -1,0 +1,18 @@
+export ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron
+export ELECTRON_CUSTOM_DIR="/9.2.0"
+ 
+ 
+http://npm.taobao.org/mirrors/electron/9.2.0/electron-v9.2.0-linux-x64.zip
+
+
+apt-get install fakeroot
+
+
+# 生成图标
+npx electron-icon-builder -i ./path-your-icon-file.png -o output
+
+
+cnpm run build
+cnpm run deb64
+
+
